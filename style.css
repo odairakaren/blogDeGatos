@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', 'sans-serif';
+}
+:root{
+    --blue-300:#065E7C;
+    --white:#FFF;
+    --blue:#387E96;
+}
+
+:focus{
+    outline: transparent;
+}
+
+header{
+    background: var(--blue-300);
+    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+    display: flex;
+    gap: 1.625rem;
+    align-items: center;
+}
+
+.autocompletefield{
+    height: 2.5rem;
+    /* width: 15.06rem; */
+    padding-left: 1rem;
+    border-radius: 4px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* line-height: 0; */
+    /* opacity: 0.4; */
+    color: var(--white);
+    font-size: 1rem;
+    flex: 1;
+}
+
+.autocompletefield::placeholder{
+    color: var(--white);
+}
+
+.paw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background: var(--white);
+}
+
+.avatar{
+    width: 2.625rem;
+    height: 2.625em;
+    border-radius: 9999px;
+}
+
+.cat-img{
+    width: 100%;
+}
+
+main, .first-page{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    padding-left: 1.375rem;
+    padding-top: 1.9375rem;
+    padding-right: 1.375rem;
+    padding-bottom: 2rem;
+}
+
+.title1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.description{
+    line-height: 160%;
+}
+
+.description h5{
+    font-weight: normal;
+}
+
+.feedback-wrapper{
+    display: flex;
+    flex: 1;
+    gap: 0.75rem;
+}
+
+.feedback{
+    background-color: var(--blue-300);
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    padding: 0.75rem;
+
+}
+
+.articles{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.articles-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.articles h5{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.articles h6,p{
+    font-size: 14px;
+    font-weight: normal;
+    white-space: normal
+    /* line-height: 160%; */
+}
+
+footer h5{
+    background: var(--blue);
+    font-size: 16px;
+    padding: 1rem;
+    color: var(--white);
+    text-align: center;
+    font-weight:600;
+}
+
+@media screen and (min-width: 600px) {
+    .pages{
+        display: flex;
+        flex-direction: row;
+         padding-left: 6.10rem;
+        gap: 2.85rem;
+    }
+
+    .first-page{
+        flex: 70
+    }
+
+    .second-page{
+        flex:30
+    }
+  }
